@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DocuVisualPro</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2563eb;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 70px 20px 40px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #6b7280;
+      max-width: 650px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .upload {
+      background: white;
+      max-width: 650px;
+      margin: 30px auto;
+      padding: 40px 25px;
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.08);
+      text-align: center;
+    }
+
+    .upload-area {
+      border: 2px dashed #93c5fd;
+      border-radius: 14px;
+      padding: 40px 20px;
+    }
+
+    .upload-area h2 {
+      margin-bottom: 10px;
+    }
+
+    .upload-area p {
+      color: #6b7280;
+      margin-bottom: 22px;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .button {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .features {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 20px;
+    }
+
+    .feature {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.05);
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+      color: #2563eb;
+    }
+
+    .feature p {
+      color: #6b7280;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px;
+      color: #6b7280;
+    }
+
+    @media (max-width:600px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">DocuVisualPro</div>
+</header>
+
+<section class="hero">
+
+  <h1>Convierte tus documentos en contenido visual</h1>
+
+  <p>
+    Sube tu documento y transforma información compleja
+    en contenido claro, visual y fácil de entender.
+  </p>
+
+</section>
+
+<section class="upload">
+
+  <div class="upload-area">
+
+    <h2>Sube tu documento</h2>
+
+    <p>PDF, Word o documentos compatibles</p>
+
+    <label class="button" for="document">
+      Seleccionar documento
+    </label>
+
+    <input
+      id="document"
+      type="file"
+      accept=".pdf,.doc,.docx"
+    >
+
+  </div>
+
+</section>
+
+<section class="features">
+
+  <div class="feature">
+    <h3>📊 Infografías</h3>
+    <p>
+      Convierte documentos extensos en información
+      visual clara y organizada.
+    </p>
+  </div>
+
+  <div class="feature">
+    <h3>📄 Resúmenes</h3>
+    <p>
+      Extrae los puntos principales de tus documentos
+      rápidamente.
+    </p>
+  </div>
+
+  <div class="feature">
+    <h3>🌍 Traducción</h3>
+    <p>
+      Prepara tus documentos para trabajar
+      en diferentes idiomas.
+    </p>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 DocuVisualPro
+</footer>
+
+</body>
+</html>
